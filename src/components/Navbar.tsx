@@ -55,6 +55,7 @@ export const Navbar = () => {
           <Link href={"/"}>Creator</Link>
           <Link href={"/"}>Community</Link>
           <Link href={"/"}>Subscribe</Link>
+          
         </div>
         <div className="flex justify-center items-center gap-8">
           {/* icon */}
