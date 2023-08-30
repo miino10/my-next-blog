@@ -4,10 +4,10 @@ import React from "react";
 
 export default function hero() {
   return (
-    <div className=" w-full h-[100vh] mt-8   flex flex-col md:flex-row gap-2  md:gap-10">
+    <div className=" w-full h-[100vh]  mt-8 md:h-[60vh] xl:h-[50vh]    flex flex-col md:flex-row gap-2  md:gap-10">
       {/* left */}
-      <div className=" flex-1  flex justify-center  ">
-        <div className=" h-[40vh] w-[90%] md:w-[80vh] md:h-[60vh] lg:w-[60vh] xl:w-[75vh]  xl:h-[50vh] relative  md:mt-0">
+      <div className=" flex-1  flex justify-center xl:mr-16  ">
+        <div className=" h-[40vh] w-[90%] md:w-[80vh] md:h-[60vh] lg:w-[60vh] xl:w-[80vh]  xl:h-[50vh] relative  md:mt-0">
           <Image
             src="/john.jpg"
             alt="heroimg"

@@ -4,7 +4,7 @@ import { BsBook, BsPen } from "react-icons/bs";
 import { AiOutlineBulb } from "react-icons/ai";
 export default function Welcome() {
   return (
-    <div className="  flex justify-center    ">
+    <div className="  flex justify-center mt-5    ">
       <div className=" w-[90%]  h-32 md:h-48 lg:w-full flex  flex-col gap-3  md:gap-2 md:py-4 items-center justify-center bg-gray-100 text-center rounded-lg">
         <h1 className="text-slate-500 text-base font-medium md:text-2xl">
           Welcome to our Blog
