@@ -9,8 +9,8 @@ export default function Welcome() {
         <h1 className="text-slate-500 text-base font-medium md:text-2xl">
           Welcome to our Blog
         </h1>
-        <div className="md:w-[65%] md:h-[80%]  md:p-2">
-          <h2 className="text-base font-medium md:text-lg lg:text-2xl xl:text-4xl ">
+        <div className="md:w-[70%] md:h-[80%]  md:p-2">
+          <h2 className="text-base font-medium md:text-lg lg:text-2xl xl:text-3xl ">
             Crafting narrative that ignit{" "}
             <span className="text-red-500"> inspiration</span>,{" "}
             <span className="text-red-500">knowledge</span> , and
