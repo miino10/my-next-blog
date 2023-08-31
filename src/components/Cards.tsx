@@ -16,17 +16,6 @@ export default function Cards() {
     },
 
     {
-      id: 3,
-      profileUrl: "/Papua.jpg",
-      channelName: "NBC",
-      timePost: "1 Day Ago",
-      channelImg: "/nbc.jpg",
-      tagPost: "Joke",
-      titlePost: "Papua:Atleast one Killed in hunt for kidnapped Nz pilot",
-      mainTextPost:
-        "At least one indonesian soldier has been killed in rebel attack while searching for a kidnapped New zealand pilot in the papua region, officially say",
-    },
-    {
       id: 2,
       profileUrl: "/liverpool.webp",
       channelName: "BBC",
@@ -36,6 +25,17 @@ export default function Cards() {
       titlePost: "Liverpool hammer Leeds for fist win in five games",
       mainTextPost:
         "Mohamed salah and Diego jota both scored twice as Liverpool claimed a first league win in five games by influencing a second seccessive home hammering o",
+    },
+    {
+      id: 3,
+      profileUrl: "/liverpool.webp",
+      channelName: "NBC",
+      timePost: "1 Day Ago",
+      channelImg: "/nbc.jpg",
+      tagPost: "Joke",
+      titlePost: "Papua:Atleast one Killed in hunt for kidnapped Nz pilot",
+      mainTextPost:
+        "At least one indonesian soldier has been killed in rebel attack while searching for a kidnapped New zealand pilot in the papua region, officially say",
     },
     {
       id: 4,
