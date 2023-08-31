@@ -1,71 +1,67 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { BsArrowRightShort } from "react-icons/bs";
+import Card from "./Card";
 
 export default function Cards() {
+  const CardData = [
+    {
+      id: 1,
+      profileUrl: "/Formula.jpg",
+      channelName: "Formula 1",
+      timePost: "3 Hours Ago",
+      channelImg: "/Formulalogo.jpg",
+      tagPost: "Sports",
+      titlePost: "'He deserves a lot more' Verstappen backs Alonso",
+      mainTextPost:
+        'Max verstappen believes his fellow two time world champion Fernando Alonso"deserves a lot more "Victories in Formula 1 and has backed the spaniar ',
+    },
+    {
+      id: 2,
+      profileUrl: "/liverpool.webp",
+      channelName: "BBC",
+      timePost: "10 Hours Ago",
+      channelImg: "/bbclogo2.jpg",
+      tagPost: "Sports",
+      titlePost: "Liverpool hammer Leeds for fist win in five games",
+      mainTextPost:
+        "Mohamed salah and Diego jota both scored twice as Liverpool claimed a first league win in five games by influencing a second seccessive home hammering o",
+    },
+    {
+      id: 3,
+      profileUrl: "/Papua.jpg",
+      channelName: "NBC",
+      timePost: "1 Day Ago",
+      channelImg: "/nbc.jpg",
+      tagPost: "Joke",
+      titlePost: "Papua:Atleast one Killed in hunt for kidnapped Nz pilot",
+      mainTextPost:
+        "At least one indonesian soldier has been killed in rebel attack while searching for a kidnapped New zealand pilot in the papua region, officially say",
+    },
+    {
+      id: 4,
+      profileUrl: "/Israel.webp",
+      channelName: "CBC",
+      timePost: "16 Hours Ago ",
+      channelImg: "/cbc.png",
+      tagPost: "Middle East",
+      titlePost: "Jeremy Bowen:Israel's unclear road ahead",
+      mainTextPost:
+        "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
+    },
+  ];
   return (
-    <div className="mt-5 h-[100vh] ">
-      {/* text */}
-      <div className="flex justify-between">
-        <h1 className="text-3xl font-bold">Latest News</h1>
-        <Link
-          href={"/"}
-          className="flex items-center   px-5
-         "
-        >
-          <p className="text-red-500 text-xl font-semibold">See all</p>
-          <BsArrowRightShort className="text-red-500 w-10 h-10" />
-        </Link>
-      </div>
-      {/* card */}
-      <div className="flex gap-5">
-        <div className="mt-4  h-[60vh]">
-          {/* imagesparts */}
-          <div className="mt-5 mb-2 ">
-            <div className="w-[40vh] h-[25vh] relative mb-2">
-              <Image
-                src={"/Formula.jpg"}
-                alt={"imgPost"}
-                fill
-                className="object-cover rounded-xl"
-              />
-            </div>
-            <div className="flex items-center gap-1 text-center">
-              <div className="w-8 h-8 relative  ">
-                <Image
-                  src={"/Formulalogo.jpg"}
-                  alt={"imgAcoount"}
-                  fill
-                  className="object-cover rounded-full border-gray-300 border"
-                />
-              </div>
-              <p>Formula 1</p>
-
-              <p>3 hours ago</p>
-            </div>
-          </div>
-          {/* textPart */}
-          <div className="">
-            <Link href={"/"}>
-              <h2 className="text-xl font-bold">
-                'He deserves a lot more'
-                <br />
-                Verstappen back
-                <br /> Alonso
-              </h2>
-            </Link>
-            <p className=" line-clamp-4   max-w-[40vh] mt-3">
-              "John Wick 4," the legendary hitman, John Wick, finds himself
-              pulled back into the world of assassins and intrigue once again
-              After the events of the previous films, John is on the run and has
-              become a target himself.
-            </p>
-            <p className="text-red-500 font-semibold mt-3">Sports</p>
-          </div>
-        </div>
-        {/* card */}
-      </div>
+    <div className="flex justify-center md:justify-start  md:gap-8 xl:gap-5 flex-wrap xl:flex-nowrap mb-8 ">
+      {CardData.map((data) => (
+        <Card
+          id={data.id}
+          profileUrl={data.profileUrl}
+          channelName={data.channelName}
+          timePost={data.timePost}
+          channelImg={data.channelImg}
+          tagPost={data.tagPost}
+          titlePost={data.titlePost}
+          mainTextPost={data.mainTextPost}
+        />
+      ))}
     </div>
   );
 }
