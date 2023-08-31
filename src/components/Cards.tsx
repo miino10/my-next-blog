@@ -14,17 +14,7 @@ export default function Cards() {
       mainTextPost:
         'Max verstappen believes his fellow two time world champion Fernando Alonso"deserves a lot more "Victories in Formula 1 and has backed the spaniar ',
     },
-    {
-      id: 2,
-      profileUrl: "/liverpool.webp",
-      channelName: "BBC",
-      timePost: "10 Hours Ago",
-      channelImg: "/bbclogo2.jpg",
-      tagPost: "Sports",
-      titlePost: "Liverpool hammer Leeds for fist win in five games",
-      mainTextPost:
-        "Mohamed salah and Diego jota both scored twice as Liverpool claimed a first league win in five games by influencing a second seccessive home hammering o",
-    },
+
     {
       id: 3,
       profileUrl: "/Papua.jpg",
@@ -35,6 +25,17 @@ export default function Cards() {
       titlePost: "Papua:Atleast one Killed in hunt for kidnapped Nz pilot",
       mainTextPost:
         "At least one indonesian soldier has been killed in rebel attack while searching for a kidnapped New zealand pilot in the papua region, officially say",
+    },
+    {
+      id: 2,
+      profileUrl: "/liverpool.webp",
+      channelName: "BBC",
+      timePost: "10 Hours Ago",
+      channelImg: "/bbclogo2.jpg",
+      tagPost: "Sports",
+      titlePost: "Liverpool hammer Leeds for fist win in five games",
+      mainTextPost:
+        "Mohamed salah and Diego jota both scored twice as Liverpool claimed a first league win in five games by influencing a second seccessive home hammering o",
     },
     {
       id: 4,
