@@ -20,8 +20,7 @@ export default function Card({
   channelName,
   timePost,
   tagPost,
-}: // ,
-// ,
+}: 
 CardProps) {
   return (
     <div className=" h-[90vh] lg:h-[80vh] xl:w-[40vh] md:px-8 lg:px-0  ">
@@ -55,7 +54,7 @@ CardProps) {
                 <p>{timePost}</p>
               </div>
 
-              {/* <p>3 hours ago</p> */}
+             
             </div>
           </div>
           {/* textPart */}
@@ -69,7 +68,7 @@ CardProps) {
             <p className="text-red-500 font-semibold mt-3">{tagPost}</p>
           </div>
         </div>
-        {/* card */}
+        
       </div>
     </div>
   );

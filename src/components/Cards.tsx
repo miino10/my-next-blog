@@ -53,6 +53,7 @@ export default function Cards() {
       {CardData.map((data) => (
         <Card
           id={data.id}
+          key={data.id}
           profileUrl={data.profileUrl}
           channelName={data.channelName}
           timePost={data.timePost}
