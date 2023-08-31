@@ -28,7 +28,7 @@ export default function Cards() {
     },
     {
       id: 3,
-      profileUrl: "/liverpool.webp",
+      profileUrl: "/papua.png",
       channelName: "NBC",
       timePost: "1 Day Ago",
       channelImg: "/nbc.jpg",
