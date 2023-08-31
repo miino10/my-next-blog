@@ -38,7 +38,7 @@ export default function Cards() {
     },
     {
       id: 4,
-      profileUrl: "/Israel.webp",
+      profileUrl: "/Israel.jpg",
       channelName: "CBC",
       timePost: "16 Hours Ago ",
       channelImg: "/cbc.png",
