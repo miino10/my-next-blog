@@ -3,18 +3,20 @@ import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 export default function LatestNews() {
   return (
-    <div className="mt-5  ">
-      <div className="flex justify-between ">
-        <h1 className="text-2xl md:text-3xl font-bold ml-5 md:ml-0">
+    <div className="mt-5  min-w-[36vh]   ">
+      <div className="flex  gap-5 justify-between">
+        <h1 className="text-base md:text-3xl font-bold ml-8  md:ml-6 2xl:text-5xl">
           Latest News
         </h1>
         <Link
           href={"/"}
-          className="flex items-center  xl:ml-8 xl:mr-0 lg:mr-16 md:mr-36 
+          className="flex items-center mr-8  md:mr-36   lg:mr-16 xl:mr-14 2xl:mr-32
          "
         >
-          <p className="text-red-500 text-xl font-semibold ">See all</p>
-          <BsArrowRightShort className="text-red-500 w-10 h-10" />
+          <p className="text-red-500 text-sm min-w-fit  md:text-xl font-semibold 2xl:text-5xl">
+            See all
+          </p>
+          <BsArrowRightShort className="text-red-500 w-5 h-5 md:w-10 md:h-10 2xl:w-32 2xl:h-20" />
         </Link>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
 interface CardProps {
   id: number;
   titlePost: string;
@@ -20,55 +21,44 @@ export default function Card({
   channelName,
   timePost,
   tagPost,
-}: 
-CardProps) {
+}: CardProps) {
   return (
-    <div className=" h-[90vh] lg:h-[80vh] xl:w-[40vh] md:px-8 lg:px-0  ">
-      {/* text */}
-
-      {/* card */}
-      <div className="flex gap-5 ">
-        <div className="mt-4  h-[60vh]">
-          {/* imagesparts */}
-          <div className="mt-5 mb-2 ">
-            <div className="w-[55vh]  h-[30vh] md:w-[50vh] xl:w-[40vh] relative mb-2">
-              <Image
-                src={profileUrl}
-                alt={"imgPost"}
-                fill
-                className="object-cover rounded-xl"
-              />
-            </div>
-            <div className="flex items-center gap-1 text-center">
-              <div className="w-8 h-8 relative  ">
-                <Image
-                  src={channelImg}
-                  alt={"imgAcoount"}
-                  fill
-                  className="object-cover rounded-full border-gray-300 border"
-                />
-              </div>
-              {/* <p>Formula 1</p> */}
-              <div className="flex gap-6">
-                <p> {channelName}</p>
-                <p>{timePost}</p>
-              </div>
-
-             
-            </div>
+    <div className="w-full md:w-[40%] lg:w-[45%] xl:w-[23%] xl:h-fit  p-4 flex md:gap-8  ">
+      <div className="flex flex-col gap-2  md:w-full lg:w-fit xl:h-fit ">
+        {/* Image and Channel Info */}
+        <div className="relative w-full md:w-full h-[30vh] md:h-[40vh] lg:w-full lg:h-[40vh] xl:h-[30vh]">
+          <Image
+            src={profileUrl}
+            alt="imgPost"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-xl"
+          />
+        </div>
+        <div className="flex items-center gap-2 text-sm">
+          <div className="w-8 h-8 relative">
+            <Image
+              src={channelImg}
+              alt="imgAccount"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full border border-gray-300"
+            />
           </div>
-          {/* textPart */}
-          <div className="">
-            <Link href={"/"}>
-              <h2 className="text-xl lg:text-2xl font-bold  max-w-[40vh] min-h-[15vh]   line-clamp-3 overflow-hidden">
-                {titlePost}
-              </h2>
-            </Link>
-            <p className=" line-clamp-4   max-w-[40vh] mt-3">{mainTextPost}</p>
-            <p className="text-red-500 font-semibold mt-3">{tagPost}</p>
+          <div className="flex flex-col 2xl:text-2xl">
+            <p>{channelName}</p>
+            <p>{timePost}</p>
           </div>
         </div>
-        
+
+        {/* Text Content */}
+        <Link href="/">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold max-w-[40vh] min-h-[15vh] line-clamp-3 overflow-hidden 2xl:text-5xl">
+            {titlePost}
+          </h2>
+        </Link>
+        <p className="text-sm lg:text-base line-clamp-4 2xl:text-4xl">{mainTextPost}</p>
+        <p className="text-red-500 font-semibold 2xl:text-3xl">{tagPost}</p>
       </div>
     </div>
   );

@@ -1,5 +1,63 @@
+// import React from "react";
+// import Card from "./Card";
+// import Link from "next/link";
+// import { BsArrowRightShort } from "react-icons/bs";
+
+// export default function Cards() {
+//   const CardData = [
+//     {
+//       id: 1,
+//       profileUrl: "/Formula.jpg",
+//       channelName: "Formula 1",
+//       timePost: "3 Hours Ago",
+//       channelImg: "/Formulalogo.jpg",
+//       tagPost: "Sports",
+//       titlePost: "'He deserves a lot more' Verstappen backs Alonso",
+//       mainTextPost:
+//         'Max verstappen believes his fellow two time world champion Fernando Alonso"deserves a lot more "Victories in Formula 1 and has backed the spaniar ',
+//     },
+
+//     {
+//       id: 2,
+//       profileUrl: "/liverpool.webp",
+//       channelName: "BBC",
+//       timePost: "10 Hours Ago",
+//       channelImg: "/bbclogo2.jpg",
+//       tagPost: "Sports",
+//       titlePost: "Liverpool hammer Leeds for fist win in five games",
+//       mainTextPost:
+//         "Mohamed salah and Diego jota both scored twice as Liverpool claimed a first league win in five games by influencing a second seccessive home hammering o",
+//     },
+
+//   ];
+//   return (
+//     <div className="bg-green-300 w-screen md:h-fit  ">
+//       <div className="flex bg-yellow-300  justify-center md:justify-start  md:gap-8 xl:gap-5  flex-wrap xl:flex-nowrap  min-h-fit  min-w-[100%]   ">
+//         {CardData.map((data) => (
+//           <Card
+//             id={data.id}
+//             key={data.id}
+//             profileUrl={data.profileUrl}
+//             channelName={data.channelName}
+//             timePost={data.timePost}
+//             channelImg={data.channelImg}
+//             tagPost={data.tagPost}
+//             titlePost={data.titlePost}
+//             mainTextPost={data.mainTextPost}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+
+// 
+
+
 import React from "react";
 import Card from "./Card";
+import clsx from "clsx";
 
 export default function Cards() {
   const CardData = [
@@ -12,9 +70,8 @@ export default function Cards() {
       tagPost: "Sports",
       titlePost: "'He deserves a lot more' Verstappen backs Alonso",
       mainTextPost:
-        'Max verstappen believes his fellow two time world champion Fernando Alonso"deserves a lot more "Victories in Formula 1 and has backed the spaniar ',
+        'Max Verstappen believes his fellow two-time world champion Fernando Alonso "deserves a lot more" victories in Formula 1 and has backed the Spaniard.',
     },
-
     {
       id: 2,
       profileUrl: "/liverpool.webp",
@@ -37,6 +94,7 @@ export default function Cards() {
       mainTextPost:
         "At least one indonesian soldier has been killed in rebel attack while searching for a kidnapped New zealand pilot in the papua region, officially say",
     },
+
     {
       id: 4,
       profileUrl: "/qudus.jpg",
@@ -49,21 +107,24 @@ export default function Cards() {
         "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
     },
   ];
+
   return (
-    <div className="flex justify-center md:justify-start  md:gap-8 xl:gap-5 flex-wrap xl:flex-nowrap mb-8 ">
-      {CardData.map((data) => (
-        <Card
-          id={data.id}
-          key={data.id}
-          profileUrl={data.profileUrl}
-          channelName={data.channelName}
-          timePost={data.timePost}
-          channelImg={data.channelImg}
-          tagPost={data.tagPost}
-          titlePost={data.titlePost}
-          mainTextPost={data.mainTextPost}
-        />
-      ))}
+    <div className=" w-screen  lg:w-[100%] h-auto md:min-h-[100vh]  ">
+      <div className="flex  flex-wrap justify-center md:justify-start  md:gap-12 lg:gap-8 xl:gap-5 p-4  ">
+        {CardData.map((data) => (
+          <Card
+            id={data.id}
+            key={data.id}
+            profileUrl={data.profileUrl}
+            channelName={data.channelName}
+            timePost={data.timePost}
+            channelImg={data.channelImg}
+            tagPost={data.tagPost}
+            titlePost={data.titlePost}
+            mainTextPost={data.mainTextPost}
+          />
+        ))}
+      </div>
     </div>
   );
 }
