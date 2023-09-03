@@ -48,20 +48,21 @@ export const Navbar = () => {
       </div>
       <div className="  w-full py-3 md:flex md:justify-between  hidden">
         <div className="flex gap-5 text-lg items-center font-normal">
-          <div className="w-36 h-20 relative right-4">
-            <Image src={"/logo.png"} alt={"logo"} fill />
-          </div>
+          <Link href={"/"}>
+            <div className="w-36 h-20 relative right-4">
+              <Image src={"/logo.png"} alt={"logo"} fill />
+            </div>
+          </Link>
           <Link href={"/"}>Stories</Link>
           <Link href={"/"}>Creator</Link>
           <Link href={"/"}>Community</Link>
           <Link href={"/"}>Subscribe</Link>
-          
         </div>
         <div className="flex justify-center items-center gap-8">
           {/* icon */}
           <div className="flex items-center gap-2">
             <HiOutlinePencilAlt />
-            <Link href={""}>Write</Link>
+            <Link href={"/post"}>Write</Link>
           </div>
           {/* icon */}
           <BsBell />

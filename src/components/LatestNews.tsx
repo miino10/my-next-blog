@@ -9,7 +9,7 @@ export default function LatestNews() {
           Latest News
         </h1>
         <Link
-          href={"/"}
+          href={"/latestnews"}
           className="flex items-center mr-8  md:mr-36   lg:mr-16 xl:mr-14 2xl:mr-32
          "
         >

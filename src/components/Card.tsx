@@ -14,7 +14,9 @@ interface CardProps {
 }
 
 export default function Card({
+  id,
   profileUrl,
+
   titlePost,
   mainTextPost,
   channelImg,
@@ -52,12 +54,14 @@ export default function Card({
         </div>
 
         {/* Text Content */}
-        <Link href="/">
+        <Link href="/news/{id}">
           <h2 className="text-lg md:text-xl lg:text-2xl font-semibold max-w-[40vh] min-h-[15vh] line-clamp-3 overflow-hidden 2xl:text-5xl">
             {titlePost}
           </h2>
         </Link>
-        <p className="text-sm lg:text-base line-clamp-4 2xl:text-4xl">{mainTextPost}</p>
+        <p className="text-sm lg:text-base line-clamp-4 2xl:text-4xl">
+          {mainTextPost}
+        </p>
         <p className="text-red-500 font-semibold 2xl:text-3xl">{tagPost}</p>
       </div>
     </div>
