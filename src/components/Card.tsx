@@ -14,9 +14,7 @@ interface CardProps {
 }
 
 export default function Card({
-  id,
   profileUrl,
-
   titlePost,
   mainTextPost,
   channelImg,
@@ -26,6 +24,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div className="w-full md:w-[40%] lg:w-[45%] xl:w-[23%] xl:h-fit  p-4 flex md:gap-8  ">
+      {}
       <div className="flex flex-col gap-2  md:w-full lg:w-fit xl:h-fit ">
         {/* Image and Channel Info */}
         <div className="relative w-full md:w-full h-[30vh] md:h-[40vh] lg:w-full lg:h-[40vh] xl:h-[30vh]">
