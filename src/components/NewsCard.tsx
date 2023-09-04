@@ -13,7 +13,7 @@ interface CardProps {
   tagPost: string;
 }
 
-export default function Card({
+export default function NewsCard({
   profileUrl,
   titlePost,
   mainTextPost,
@@ -54,7 +54,7 @@ export default function Card({
 
         {/* Text Content */}
         <Link href="/news/{id}">
-          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold max-w-[40vh] min-h-[15vh] line-clamp-3 overflow-hidden 2xl:text-5xl">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold max-w-[40vh] min-h-[11vh] line-clamp-3 overflow-hidden 2xl:text-5xl  2xl:leading-tight">
             {titlePost}
           </h2>
         </Link>

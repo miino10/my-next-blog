@@ -109,3 +109,30 @@ export const SportsNewsData = [
     tagPost: "Sports",
   },
 ];
+
+export const CreatorData = [
+  {
+    id: 1,
+    photo: "/creatorImg.jpg",
+    name: "Abdifatah Dahir",
+    channel: "BBC News",
+  },
+  {
+    id: 2,
+    photo: "/CreatorImg1.jpg",
+    name: "Jamac Geelle",
+    channel: "CBC News",
+  },
+  {
+    id: 3,
+    photo: "/CreatorImg2.jpg",
+    name: "James Brown",
+    channel: "AF News",
+  },
+  {
+    id: 4,
+    photo: "/creatorImg3.jpg",
+    name: "Khalid Saif",
+    channel: "CBS News",
+  },
+];

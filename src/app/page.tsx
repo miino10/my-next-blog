@@ -1,10 +1,13 @@
 import LatestNewsCards from "@/components/LatestNewsCards";
 import Hero from "@/components/Hero";
-import LatestNews from "@/components/LatestNews";
-import SportsNews from "@/components/SportsNews";
+import LatestNews from "@/components/LatestNewsTitle";
+import SportsNews from "@/components/SportsNewsTitle";
 
 import Welcome from "@/components/Welcome";
-import SportsNewsCards from "@/components/SportsNewsCards";
+import SportsNewsCards from "@/components/SportsNewsCard";
+import TopCreatorsTitle from "@/components/TopCreatorsTitle";
+import CreatorCards from "@/components/CreatorCards";
+
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
       <LatestNewsCards />
       <SportsNews />
       <SportsNewsCards/>
+      <TopCreatorsTitle/>
+      <CreatorCards/>
+     
     </main>
   );
 }

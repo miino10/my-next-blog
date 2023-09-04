@@ -40,7 +40,7 @@ export const Navbar = () => {
             "
           >
             <Link href={"/"}>Stories</Link>
-            <Link href={"/"}>Creator</Link>
+            <Link href={"/"}>Creators</Link>
             <Link href={"/"}>Community</Link>
             <Link href={"/"}>Subscribe</Link>
           </div>
