@@ -1,5 +1,5 @@
 import LatestNewsCards from "@/components/LatestNewsCards";
-import Hero from "@/components/Hero";
+import HeroCards from "@/components/HeroCards";
 import LatestNews from "@/components/LatestNewsTitle";
 import SportsNews from "@/components/SportsNewsTitle";
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col    ">
       <Welcome />
-      <Hero />
+      <HeroCards />
       <LatestNews />
       <LatestNewsCards />
       <SportsNews />

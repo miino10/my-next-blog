@@ -1,6 +1,7 @@
-import React from 'react'
-import CreatorsCard from './CreatorCard'
-import { CreatorData } from '@/data';
+import React from "react";
+import CreatorsCard from "./CreatorCard";
+import { CreatorData } from "@/data";
+
 
 export default function CreatorCards() {
   return (

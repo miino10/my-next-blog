@@ -58,6 +58,29 @@ export const HeroData = [
     mainTextPost:
       '"John Wick 4," the legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himself.',
   },
+  {
+    id: 2,
+    profileUrl: "/tennis.webp",
+    channelName: "AP",
+    timePost: "1 Day Ago ",
+    channelImg: "/apnews.png",
+    titlePost:
+      "Frances Tiafoe, of the United States, wipes sweat from his face during a match against Learner Tien, of the United States",
+    mainTextPost:
+      "The U.S. Open’s spot late in the tennis season creates an accumulation of wear-and-tear and general fatigue, but the sweltering conditions at Flushing Meadows likely deserve some blame for a high number of in-match retirements there.",
+    tagPost: "Sports",
+  },
+  {
+    id: 3,
+    profileUrl: "/rice.jpg",
+    channelName: "BBC",
+    timePost: "20 minutes ago ",
+    channelImg: "/bbclogo2.jpg",
+    titlePost: "Rice 'a game-changing signing'",
+    mainTextPost:
+      "Arsenal manager Mikel Arteta told a colourful tale about taking various routes into work every morning to illustrate his belief that every game tells a different story.",
+    tagPost: "Sports",
+  },
 ];
 
 export const SportsNewsData = [
