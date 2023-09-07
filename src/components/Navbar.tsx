@@ -49,24 +49,26 @@ export const Navbar = () => {
       <div className="  w-full py-3 md:flex md:justify-between  hidden">
         <div className="flex gap-5 text-lg items-center font-normal">
           <Link href={"/"}>
-            <div className="w-36 h-20 relative right-4">
+            <div className="w-36 h-20 relative right-4 2xl:h-[200px] 2xl:w-[200px]">
               <Image src={"/logo.png"} alt={"logo"} fill />
             </div>
           </Link>
-          <Link href={"/"}>Stories</Link>
-          <Link href={"/"}>Creator</Link>
-          <Link href={"/"}>Community</Link>
-          <Link href={"/"}>Subscribe</Link>
+          <div className="flex  gap-4 2xl:text-3xl">
+            <Link href={"/"}>Stories</Link>
+            <Link href={"/"}>Creator</Link>
+            <Link href={"/"}>Community</Link>
+            <Link href={"/"}>Subscribe</Link>
+          </div>
         </div>
         <div className="flex justify-center items-center gap-8">
           {/* icon */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 2xl:text-3xl">
             <HiOutlinePencilAlt />
             <Link href={"/post"}>Write</Link>
           </div>
           {/* icon */}
-          <BsBell />
-          <div className="w-10 h-10  relative ">
+          <BsBell className="2xl:text-3xl xl:text-2xl" />
+          <div className="w-10 h-10  relative xl:w-[55px] xl:h-[55px]  2xl:w-[100px] 2xl:h-[100px]">
             <Image
               className="rounded-full"
               fill
