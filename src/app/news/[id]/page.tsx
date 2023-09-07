@@ -1,9 +1,10 @@
+import CommentSection from "@/components/CommentSection";
 import Image from "next/image";
 import React from "react";
 
 export default function SignlePagenews() {
   return (
-    <div className=" h-fit pb-10 ">
+    <div className=" h-fit pb-10 flex justify-center ">
       {/* imgpart */}
       <div className="ml-2 pr-2  pt-4 lg:ml-0 w-full xl:w-[140vh] 2xl:w-[170vh] ">
         <div className=" h-[200px] md:h-[450px] xl:h-[400px] 2xl:h-[1000px] relative">
@@ -24,7 +25,9 @@ export default function SignlePagenews() {
             />
           </div>
           <div>
-            <p className="text-xs xl:text-sm 2xl:text-2xl text-gray-700">12 Minutes Ago</p>
+            <p className="text-xs xl:text-sm 2xl:text-2xl text-gray-700">
+              12 Minutes Ago
+            </p>
           </div>
         </div>
         {/* textpart */}
@@ -71,6 +74,7 @@ export default function SignlePagenews() {
             again after the
           </p>
         </div>
+        <CommentSection />
       </div>
     </div>
   );

@@ -68,11 +68,11 @@ export const Navbar = () => {
           </div>
           {/* icon */}
           <BsBell className="2xl:text-3xl xl:text-2xl" />
-          <div className="w-10 h-10  relative xl:w-[55px] xl:h-[55px]  2xl:w-[100px] 2xl:h-[100px]">
+          <div className="w-10 h-10  relative xl:w-[55px] xl:h-[55px]  2xl:w-[100px] 2xl:h-[100px] ">
             <Image
-              className="rounded-full"
+              className="rounded-full border border-gray-400 object-cover  "
               fill
-              src={"/profile.jpg"}
+              src={"/creatorImg.jpg"}
               alt={""}
             />
           </div>

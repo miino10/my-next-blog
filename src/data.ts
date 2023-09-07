@@ -132,6 +132,14 @@ export const SportsNewsData = [
     tagPost: "Sports",
   },
 ];
+export const CommentData = [
+  {
+    id: 1,
+    photo: "/creatorImg.jpg",
+    name: "Abdifatah Dahir",
+    channel: "BBC News",
+  },
+];
 
 export const CreatorData = [
   {
