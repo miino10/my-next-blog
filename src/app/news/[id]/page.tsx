@@ -1,4 +1,5 @@
-import CommentSection from "@/components/CommentSection";
+
+import ReactionPart from "@/components/ReactionPart";
 import Image from "next/image";
 import React from "react";
 
@@ -74,7 +75,9 @@ export default function SignlePagenews() {
             again after the
           </p>
         </div>
-        <CommentSection />
+        {}
+        <ReactionPart />
+        
       </div>
     </div>
   );

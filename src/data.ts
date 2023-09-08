@@ -137,7 +137,25 @@ export const CommentData = [
     id: 1,
     photo: "/creatorImg.jpg",
     name: "Abdifatah Dahir",
-    channel: "BBC News",
+    timeComment: "12 Minutes Ago",
+    CommentValue:
+      "he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel",
+  },
+  {
+    id: 2,
+    photo: "/creatorImg.jpg",
+    name: "Abdifatah Dahir",
+    timeComment: "12 Minutes Ago",
+    CommentValue:
+      "he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel",
+  },
+  {
+    id: 3,
+    photo: "/creatorImg.jpg",
+    name: "Abdifatah Dahir",
+    timeComment: "12 Minutes Ago",
+    CommentValue:
+      "he legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himsel",
   },
 ];
 
