@@ -45,7 +45,7 @@ export default function HeroCard({
           </div>
         </div>
         {/* Right */}
-        <div className="flex-[1_1_100%] md:flex-1  flex  px-5 xl:py-8    lg:w-[70vh] lg:h-[50vh] xl:h-[70vh]">
+        <div className="flex-[1_1_100%] md:flex-1  flex  px-5 xl:py-8 lg:w-[70vh] lg:h-[50vh] xl:h-[70vh]">
           <div className="flex flex-col py-8 xl:gap-y-2 2xl:gap-y-8">
             <div className="flex items-center gap-3 ">
               <div className="w-8 h-8 relative xl:w-10 xl:h-10 2xl:w-16 2xl:h-16">
@@ -60,10 +60,12 @@ export default function HeroCard({
               <p className="2xl:text-3xl">{timePost}</p>
             </div>
             <div className="mb-5 text-xl font-semibold xl:text-4xl 2xl:text-6xl">
-              <Link href={"/"}>{titlePost}</Link>
+              <Link href={"/"} className="xl:line-clamp-3 xl:py-1 2xl:py-2 2xl:leading-tight">
+                {titlePost}
+              </Link>
             </div>
-            <div className="mb-5 text-lg md:text-base lg:text-xl xl:text-2xl  overflow-hidden">
-              <p className="line-clamp-3 md:line-clamp-5 lg:line-clamp-none xl:line-clamp-3 2xl:line-clamp-5 2xl:text-5xl">
+            <div className="mb-5 text-lg md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl   overflow-hidden">
+              <p className="line-clamp-3 md:line-clamp-5 lg:line-clamp-none xl:line-clamp-3 2xl:line-clamp-5 2xl:text-5xl 2xl:leading-normal">
                 {mainTextPost}
               </p>
             </div>
