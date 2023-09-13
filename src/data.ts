@@ -44,6 +44,51 @@ export const LatestNewsData = [
     mainTextPost:
       "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
   },
+  {
+    id: 5,
+    profileUrl: "/qudus.jpg",
+    channelName: "CBC",
+    timePost: "16 Hours Ago ",
+    channelImg: "/cbc.png",
+    tagPost: "Middle East",
+    titlePost: "Jeremy Bowen:Israel's unclear road ahead",
+    mainTextPost:
+      "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
+  },
+  {
+    id: 6,
+    profileUrl: "/qudus.jpg",
+    channelName: "CBC",
+    timePost: "16 Hours Ago ",
+    channelImg: "/cbc.png",
+    tagPost: "Middle East",
+    titlePost: "Jeremy Bowen:Israel's unclear road ahead",
+    mainTextPost:
+      "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
+  },
+  {
+    id: 7,
+    profileUrl: "/qudus.jpg",
+    channelName: "CBC",
+    timePost: "16 Hours Ago ",
+    channelImg: "/cbc.png",
+    tagPost: "Middle East",
+    titlePost: "Jeremy Bowen:Israel's unclear road ahead",
+    mainTextPost:
+      "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
+  },
+  {
+    id: 8,
+    profileUrl: "/qudus.jpg",
+    channelName: "CBC",
+    timePost: "16 Hours Ago ",
+    channelImg: "/cbc.png",
+    tagPost: "Middle East",
+    titlePost: "Jeremy Bowen:Israel's unclear road ahead",
+    mainTextPost:
+      "Jerusalem is a holy city of true believers. The atmosphere here crackles loudest when the faithful celebrate their religious holidays, especially in the walled Old City where the Christian, Jewish and Islamic holy sites are minutes away from each other.",
+  },
+  
 ];
 
 export const HeroData = [
@@ -121,6 +166,54 @@ export const SportsNewsData = [
   },
   {
     id: 4,
+    profileUrl: "/john.jpg",
+    channelName: "CBC",
+    timePost: "12 minutes ago ",
+    channelImg: "/netflex.png",
+
+    titlePost: "Where to watch 'John Wick: Chapter 4'",
+    mainTextPost:
+      '"John Wick 4," the legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himself.',
+    tagPost: "Sports",
+  },
+  {
+    id: 5,
+    profileUrl: "/john.jpg",
+    channelName: "CBC",
+    timePost: "12 minutes ago ",
+    channelImg: "/netflex.png",
+
+    titlePost: "Where to watch 'John Wick: Chapter 4'",
+    mainTextPost:
+      '"John Wick 4," the legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himself.',
+    tagPost: "Sports",
+  },
+  {
+    id: 6,
+    profileUrl: "/john.jpg",
+    channelName: "CBC",
+    timePost: "12 minutes ago ",
+    channelImg: "/netflex.png",
+
+    titlePost: "Where to watch 'John Wick: Chapter 4'",
+    mainTextPost:
+      '"John Wick 4," the legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himself.',
+    tagPost: "Sports",
+  },
+  {
+    id: 7,
+    profileUrl: "/john.jpg",
+    channelName: "CBC",
+    timePost: "12 minutes ago ",
+    channelImg: "/netflex.png",
+
+    titlePost: "Where to watch 'John Wick: Chapter 4'",
+    mainTextPost:
+      '"John Wick 4," the legendary hitman, John Wick, finds himself pulled back into the world of assassins and intrigue once again after the events of the previous films. John is on the run and has become a target himself.',
+    tagPost: "Sports",
+  },
+  {
+    id: 8,
     profileUrl: "/john.jpg",
     channelName: "CBC",
     timePost: "12 minutes ago ",

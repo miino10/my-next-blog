@@ -1,22 +1,26 @@
 "use client";
-
+import { BsBell } from "react-icons/bs";
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { BsBell } from "react-icons/bs";
 import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import { HiOutlinePencilAlt } from "react-icons/hi";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
   };
-  const auth = false;
+
+  const { data, status } = useSession();
+  console.log("status: " + status);
+  console.log("data: " + data);
+
   return (
     <>
-      <div className="   flex justify-between items-center md:hidden h-full">
+      <div className="  w-[120%]  flex justify-between items-center md:hidden h-full">
         <div className="w-32 h-32 relative ml-5">
           <Image src={"/logo.png"} alt={"logo"} fill className="object-cover" />
         </div>
@@ -58,13 +62,14 @@ export const Navbar = () => {
             <Link href={"/"}>Stories</Link>
             <Link href={"/"}>Creator</Link>
 
-            {auth ? (
-              <Link
-                href={"/"}
+            {status === "authenticated" ? (
+              <button
                 className="bg-red-400 p-2 2xl:p-4 text-white rounded-xl"
+                onClick={() => signOut()}
               >
+                {" "}
                 Logout
-              </Link>
+              </button>
             ) : (
               <>
                 <Link href={"/login"} className="bg-yellow-200 p-2  rounded-xl">
@@ -79,7 +84,7 @@ export const Navbar = () => {
         </div>
         <div className="flex justify-center items-center gap-8">
           {/* icon */}
-          {auth && (
+          {status === "authenticated" && (
             <>
               <div className="flex items-center gap-2 2xl:text-3xl">
                 <HiOutlinePencilAlt />
@@ -93,7 +98,12 @@ export const Navbar = () => {
             <Image
               className="rounded-full border border-gray-400 object-cover  "
               fill
-              src={auth ? "/creatorImg.jpg" : "/defaultImg.jpg"}
+              src={
+                status === "authenticated" &&
+                typeof data.user?.image === "string"
+                  ? data.user?.image
+                  : "/defaultImg.jpg"
+              }
               alt={""}
             />
           </div>

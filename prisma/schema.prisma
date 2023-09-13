@@ -7,40 +7,13 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = env("MONGO_URL")
 }
+model User {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  email   String   @unique
+  name    String
+  hashedPassword  String?
 
-model User{
-   id String @id @default(auto()) @map("_id") @db.ObjectId
-  name String?
-  email String? @unique
-  emailVerified DateTime?
-  imag String?
-  hsshedPasword String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  accounts Account[]
-}
-model Account{
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  userId  String @db.ObjectId
-  type  String
-  provider String
-  typeProvider  String
-  providerAccountId String
-  refresh_token String? @db.String
-  acces_token String? @db.String
-  expires_at Int?
-  token_type String?
-  scope String?
-  id_token String? @db.String
-  session_state String?
-
-  user User @relation(fields: [userId],references: [id], onDelete:Cascade)
-
-  @@unique([provider,providerAccountId])
-
-}
-
-
+} 
 
